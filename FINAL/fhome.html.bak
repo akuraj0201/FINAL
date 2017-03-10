@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<title>GetCreative</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+<style>
+body {font-family: "Raleway", Arial, sans-serif}
+.w3-row img {margin-bottom: -8px}
+</style>
+<body>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+  <!-- Header -->
+  <header class="w3-container w3-large w3-padding-24">
+    
+    <a href="#about" class="w3-right w3-btn w3-white">About</a>
+	<a href="login.html" class="w3-right w3-btn w3-white">Login</a>
+	<a href="#contacts" class="w3-right w3-btn w3-white">Contacts</a>
+
+
+
+  </header>
+
+  <!-- Photo Grid -->
+  <div class="w3-row">
+    <div class="w3-half">
+      <img src="http://www.w3schools.com/w3images/streetart.jpg" style="width:100%">
+      <img src="http://www.w3schools.com/w3images/streetart2.jpg" style="width:100%">
+      <img src="http://www.w3schools.com/w3images/streetart5.jpg" style="width:100%">
+    </div>
+
+    <div class="w3-half">
+      <img src="http://www.w3schools.com/w3images/streetart3.jpg" style="width:100%">
+      <img src="http://www.w3schools.com/w3images/streetart4.jpg" style="width:100%">
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer / About Section -->
+<footer class="w3-light-grey w3-padding-64 w3-center" id="about">
+  <h2>About</h2>
+  
+  <form style="margin:auto;width:60%" action="form.asp" target="_blank">
+    <p><b>TalentSearch is a simple website which provides students a good opportunity to showcase their talents.It can be their craftwork,paintings,photography......This platform can be used to get you further opportunities or even sell ur products by just posting a picture of your work.If you are in quest for new talent,this platform will help you find it.</b> </p>
+	<footer class="w3-light-grey w3-padding-64 w3-center" id="contacts">
+  <h2><p class="w3-large w3-text-pink">Any Queries? Do not hesitate to contact us!</p></h2>
+    
+  
+    <div class="w3-group">
+      <label><b>Email</b></label> <pre>  samipyalahari@gmail.com<br>
+	  chanigarineha@gmail.com<br>anushak@gmail.com
+	  <br>prabhalasravanthi@gmail.com</pre>
+     
+    </div>
+   
+  </form>
+  <br>
+ 
+</footer>
+ 
+ 
+</body>
+</html>

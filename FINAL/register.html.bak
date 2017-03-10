@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javaScript" >
+function validation()
+{	
+	var name=
+      document.forms["myForm"]["NAME"].value;
+	   var pno=document.forms["myForm"]["NUM"].value;
+	   var  un=document.forms["myForm"]["UN"].value;
+	var pw=document.forms["myForm"]["PW"].value;
+	   
+	   var ppattern=/\+91[0-9]{10}/;
+	   if(!pno.match(ppattern))
+	{
+		   alert("invalid mobile number");
+			return false;
+	}
+//	var unpattern=/{1,20}/;
+/*	if(!un.match(unpattern))
+	{
+	    alert("username can be of maximum 20 characters");
+        return false;
+	}*/
+
+	var pwpattern=/(?=.*[A-Z])\w{6,10}/;
+	   if(!pw.match(pwpattern))
+	{alert("ur password should contain atleast one uppercase letter & its length shud be min 6 & max 10 chars");
+	  return false;
+	}
+	
+	return true;
+}
+</script>
+</head>
+<body>
+ <link rel="stylesheet" type="text/css" href="register.css"/>
+<form name="myForm" action="insert.jsp" onsubmit=return(validation()) method="post">
+  <div class="col-2">
+    <label>
+      Name
+      <input type="text" name="NAME" placeholder="Name" tabindex="1" maxlength="20" required/>
+    </label>
+  </div>
+  <div class="col-2">
+    <label>
+      Username
+      <input type="text" name="UN" maxlength="20" placeholder="Username:it can be a maximum of 20 characters" tabindex="2"  required/>
+    </label>
+  </div>
+<div class="col-2">
+    <label>
+      Password
+      <input type="password" name="PW" maxlength="10" placeholder="Password" tabindex="1" required/>
+    </label>
+  </div>
+  <div class="col-2">
+    <label>
+      Phone Number
+      <input placeholder="Phone number(add +91 at beginning)" 
+	  name="NUM" tabindex="2" required/>
+    </label>
+  </div>
+ 
+  
+  <div class="col-submit">
+    <input type="submit" value ="Submit" style="margin-right:20px">
+	<input type="reset" value="Reset">
+  </div>
+
+</form>
+</body>
+</html>
